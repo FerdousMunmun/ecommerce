@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+/* ---------- HEADER ---------- */
+
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 14px;
+}
+
+/* top row */
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 48px;
+}
+
+.header-logo {
+  font-size: 22px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
+.header-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #555;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+/* active + hover underline effect */
+.header-link.active,
+.header-link:hover {
+  color: #111;
+}
+
+.header-link.active::after,
+.header-link:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: #111;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* bottom row */
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 48px;
+  background: #f7f6f3;
+  border-top: 1px solid #eee;
+}
+
+.category-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.category-icon {
+  font-size: 18px;
+}
+
+/* search */
+
+.search-wrapper {
+  flex: 1;
+  max-width: 540px;
+  display: flex;
+  align-items: center;
+  margin: 0 40px;
+  background: #ffffff;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #e5e5e5;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 10px 14px;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-btn {
+  border: none;
+  background: transparent;
+  padding: 0 14px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.header-icons-bottom {
+  gap: 12px;
+}
